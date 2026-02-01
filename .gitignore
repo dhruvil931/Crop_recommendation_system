@@ -1,0 +1,63 @@
+########################################
+# GLOBAL
+########################################
+*.log
+logs/
+.env
+.DS_Store
+
+########################################
+# FRONTEND (React / Vite)
+########################################
+Frontend/node_modules/
+Frontend/dist/
+Frontend/build/
+Frontend/.env
+Frontend/.env.local
+Frontend/.env.*.local
+Frontend/.vite/
+Frontend/.cache/
+
+########################################
+# BACKEND (Spring Boot / Maven)
+########################################
+Backend/target/
+Backend/*.log
+
+# IDE junk (Backend)
+Backend/.idea/
+Backend/.classpath
+Backend/.project
+Backend/.settings/
+Backend/.springBeans
+Backend/.sts4-cache
+
+########################################
+# ML_SERVICE (Python / ML)
+########################################
+# Python cache & env
+ML_Service/__pycache__/
+ML_Service/*.pyc
+ML_Service/*.pyo
+ML_Service/.venv/
+ML_Service/env/
+ML_Service/.python-version
+
+# ❌ ML artifacts (DO NOT COMMIT)
+ML_Service/*.pkl
+ML_Service/*.joblib
+ML_Service/*.h5
+ML_Service/*.onnx
+
+# ✅ DATA (CSV IS REQUIRED → ALLOWED)
+# Explicitly allow CSV
+!ML_Service/*.csv
+
+########################################
+# EDITORS (GLOBAL)
+########################################
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
