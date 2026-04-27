@@ -8,6 +8,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.cropsys.Backend.model.User;
 
+@Repository
 public interface UserRepository extends JpaRepository<User,Long>{
 
   
