@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:8080/api/crop";
+const API_BASE_URL = "https://crop-recommendation-system-3306.onrender.com/api/crop";
 
 export const getRecommendation = async (data) => {
   const token = localStorage.getItem("token");
