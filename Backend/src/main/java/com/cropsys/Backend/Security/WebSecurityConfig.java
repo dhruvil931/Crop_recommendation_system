@@ -85,9 +85,8 @@ public class WebSecurityConfig {
                         .requestMatchers("/actuator/**").permitAll()
                         .requestMatchers("/h2-console/**").permitAll()
                         .requestMatchers("/api/admin/**").hasRole("ADMIN")
-                        .requestMatchers("/api/crop/**").permitAll()
+                        .requestMatchers("/api/crop/**").authenticated()
                         .requestMatchers("/api/otp/**").permitAll()
-
 
                         .anyRequest().authenticated()
                 );
