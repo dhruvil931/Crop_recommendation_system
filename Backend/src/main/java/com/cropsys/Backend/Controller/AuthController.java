@@ -40,7 +40,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://agrosmart-iota.vercel.app"
+})
 @RequestMapping("/api/auth")
 public class AuthController {
 
