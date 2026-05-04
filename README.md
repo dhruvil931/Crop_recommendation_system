@@ -6,6 +6,14 @@ A web-based decision support system that recommends suitable crops based on soil
 
 ---
 
+---
+
+## 🌐 Live Demo
+
+🔗 **[agrosmart-iota.vercel.app](https://agrosmart-iota.vercel.app/)**
+
+---
+
 ## 🔹 Tech Stack
 
 - **Frontend:** React  
